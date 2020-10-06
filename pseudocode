@@ -1,1 +1,14 @@
-
+def SquareArea
+  ask for sidelength
+  calculate area = sidelength*sidelength
+  squareArea
+def RectangleArea
+  ask for length
+  ask for width
+  calculate area = length*width
+  RectangleArea
+def TriangleArea
+  ask for base
+  ask for height
+  calculate area = base*height / 2
+  TriangleArea
