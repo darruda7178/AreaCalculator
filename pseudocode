@@ -7,6 +7,9 @@ def RectangleArea
   ask for width
   calculate area = length*width
   RectangleArea
+def CircleArea
+  ask for radius
+  calculate area = pi*radius**2
 def TriangleArea
   ask for base
   ask for height
