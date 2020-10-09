@@ -45,4 +45,6 @@ def ChooseYourShape():
         Triangle()
     if shape == 4:
         Circle()
+    else:
+        print("There is no shape assigned to this number.")
 ChooseYourShape()
