@@ -1,0 +1,48 @@
+def Square():
+    sideLength = input("Enter the side length of the square: ")
+    SquareArea = sideLength * sideLength
+    print("")
+    print("The area of the square is:")
+    print(SquareArea)
+    print("")
+def Rectangle():
+    length = input("Enter the length of the rectangle: ")
+    width = input("Enter the width of the rectangle: ")
+    RectangleArea = length * width
+    print("")
+    print("The area of the rectangle is:")
+    print(RectangleArea)
+    print("")
+def Circle():
+    radius = input("Enter the radius of the circle: ")
+    CircleArea = 3.14159265359 * radius ** 2
+    print("")
+    print("The area of the circle is:")
+    print(CircleArea)
+    print("")
+def Triangle():
+    base = input("Enter the base of the triangle: ")
+    height = input("Enter the height of the triangle: ")
+    TriangleArea = base * height / 2
+    print("")
+    print("The area of the triangle is:")
+    print(TriangleArea)
+    print("")
+def ChooseYourShape():
+    print("Welcome! Pick a shape that you want to find the area of by choosing the assigned number.")
+    print("")
+    print("1. Square")
+    print("2. Rectangle")
+    print("3. Triangle")
+    print("4. Square")
+    print("")
+    shape = input("Choose a number: ")
+    if shape == 1:
+        Square()
+    if shape == 2:
+        Rectangle()
+    if shape == 3:
+        Triangle()
+    if shape == 4:
+        Circle()
+ChooseYourShape()
