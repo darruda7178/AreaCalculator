@@ -34,7 +34,7 @@ def ChooseYourShape():
     print("1. Square")
     print("2. Rectangle")
     print("3. Triangle")
-    print("4. Square")
+    print("4. Circle")
     print("")
     shape = input("Choose a number: ")
     if shape == 1:
