@@ -1,33 +1,45 @@
 def Square():
-    sideLength = input("Enter the side length of the square: ")
-    SquareArea = sideLength * sideLength
+    sideLength = int(input("Enter the side length of the square: "))
+    Area_of_Square = sideLength * sideLength
     print("")
     print("The area of the square is:")
-    print(SquareArea)
+    print(Area_of_Square)
     print("")
 def Rectangle():
-    length = input("Enter the length of the rectangle: ")
-    width = input("Enter the width of the rectangle: ")
-    RectangleArea = length * width
+    length = int(input("Enter the length of the rectangle: "))
+    width = int(input("Enter the width of the rectangle: "))
+    Area_of_Rectangle = length * width
     print("")
     print("The area of the rectangle is:")
-    print(RectangleArea)
+    print(Area_of_Rectangle)
     print("")
 def Circle():
-    radius = input("Enter the radius of the circle: ")
-    CircleArea = 3.14159265359 * radius ** 2
+    radius = int(input("Enter the radius of the circle: "))
+    Area_of_Circle = 3.14159265359 * radius ** 2
     print("")
     print("The area of the circle is:")
-    print(CircleArea)
+    print(Area_of_Circle)
     print("")
 def Triangle():
-    base = input("Enter the base of the triangle: ")
-    height = input("Enter the height of the triangle: ")
-    TriangleArea = base * height / 2
+    base = int(input("Enter the base of the triangle: "))
+    height = int(input("Enter the height of the triangle: "))
+    Area_of_Triangle = base * height / 2
     print("")
     print("The area of the triangle is:")
-    print(TriangleArea)
+    print(Area_of_Triangle)
     print("")
+def Again():
+    print("Do you want to find an area again?")
+    print("1 for Yes")
+    print("2 for No")
+    yes_or_no = int(input("Answer: "))
+    if yes_or_no == 1:
+        ChooseYourShape()
+    elif yes_or_no == 2:
+        print("Thanks for using the area calculator.")
+    else:
+        print("Invalid answer.")
+        Again()
 def ChooseYourShape():
     print("Welcome! Pick a shape that you want to find the area of by choosing the assigned number.")
     print("")
@@ -36,15 +48,17 @@ def ChooseYourShape():
     print("3. Triangle")
     print("4. Circle")
     print("")
-    shape = input("Choose a number: ")
+    shape = int(input("Choose a number: "))
     if shape == 1:
         Square()
-    if shape == 2:
+    elif shape == 2:
         Rectangle()
-    if shape == 3:
+    elif shape == 3:
         Triangle()
-    if shape == 4:
+    elif shape == 4:
         Circle()
     else:
         print("There is no shape assigned to this number.")
+        ChooseYourShape()
 ChooseYourShape()
+Again()
