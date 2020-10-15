@@ -40,6 +40,12 @@ def Again():
     else:
         print("Invalid answer.")
         Again()
+def Logo():                                                                                                                           
+    print(",---.  ,------. ,------.  ,---.       ,-----.  ,---.  ,--.    ,-----.,--. ,--.,--.     ,---. ,--------. ,-----. ,------.")
+    print("/  O  \ |  .--. '|  .---' /  O  \     '  .--./ /  O  \ |  |   '  .--./|  | |  ||  |    /  O  \'--.  .--''  .-.  '|  .--. '")
+    print("|  .-.  ||  '--'.'|  `--, |  .-.  |    |  |    |  .-.  ||  |   |  |    |  | |  ||  |   |  .-.  |  |  |   |  | |  ||  '--'.'") 
+    print("|  | |  ||  |\  \ |  `---.|  | |  |    '  '--'\|  | |  ||  '--.'  '--'\'  '-'  '|  '--.|  | |  |  |  |   '  '-'  '|  |\  \")  
+    print("`--' `--'`--' '--'`------'`--' `--'     `-----'`--' `--'`-----' `-----' `-----' `-----'`--' `--'  `--'    `-----' `--' '--'")                                                                                                                                                                                                                                                      
 def ChooseYourShape():
     print("Welcome! Pick a shape that you want to find the area of by choosing the assigned number.")
     print("")
@@ -60,5 +66,6 @@ def ChooseYourShape():
     else:
         print("There is no shape assigned to this number.")
         ChooseYourShape()
+Logo()
 ChooseYourShape()
 Again()
